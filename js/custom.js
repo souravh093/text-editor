@@ -81,6 +81,17 @@ document.getElementById("fontInput").addEventListener("input", function () {
   inputContentFontInput.style.fontSize = `${fontInputValue}px`;
 });
 
+document.getElementById("upperCase").addEventListener("click", function () {
+  const upperCase = document.getElementById("upperCase");
+  upperCase.classList.toggle("bg-gray-700");
+  const inputContentJustify = document.getElementById("contentInput");
+  if (inputContentJustify.style.textTransform === "uppercase") {
+    inputContentJustify.style.textTransform = "none";
+  } else {
+    inputContentJustify.style.textTransform = "uppercase";
+  }
+});
+
 document.getElementById("colorInput").addEventListener("input", function () {
   const inputContentColorInput = document.getElementById("contentInput");
   const colorInputValue = document.getElementById("colorInput").value;
