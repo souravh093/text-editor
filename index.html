@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="flex justify-center items-center h-screen bg-blue-100">
+        <div class="flex flex-col items-center bg-blue-400 p-8">
+            <h2 class="text-white text-3xl">My Text Editor</h2>
+            <div class="border border-gray-100">
+                <nav class="flex justify-between items-center px-4 py-2">
+                    <div class="flex items-center">
+                        <button id="boldBtn" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-bold"></i></button>
+                        <button id="italicBtn" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-italic"></i></button>
+                        <button id="underlineBtn" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div class="flex items-cente">
+                        <button id="leftAlign" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="centerAlign" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="rightAlign" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-align-right"></i></button>
+                        <button id="justifyAlign" class="hover:bg-blue-300 px-2 py-2 rounded-full"><i class="fa-solid fa-align-justify"></i></button>
+                        
+                    </div>
+                    <div class="flex gap-2">
+                        <input type="number" min="10" max="100" name="" value="16" id="fontInput">
+                        <input type="color" name="" id="colorInput">
+                    </div>
+                </nav>
+                <!-- <hr class="bg-slate-300 w-full h-2"> -->
+                <textarea class="outline-none p-5" name="" id="contentInput" cols="110" rows="20"></textarea>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/cutom.js"></script>
+    <script src="js/utilities.js"></script>
+
+</body>
+</html>
